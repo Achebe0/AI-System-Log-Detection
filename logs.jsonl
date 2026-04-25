@@ -1,0 +1,150 @@
+{"timestamp": "2026-04-25T10:00:00", "service": "auth_service", "latency_ms": 80, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.025000", "service": "auth_service", "latency_ms": 54, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.069000", "service": "auth_service", "latency_ms": 45, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.084000", "service": "auth_service", "latency_ms": 53, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.129000", "service": "auth_service", "latency_ms": 52, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.165000", "service": "auth_service", "latency_ms": 54, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.175000", "service": "auth_service", "latency_ms": 50, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.194000", "service": "auth_service", "latency_ms": 53, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.228000", "service": "auth_service", "latency_ms": 46, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.254000", "service": "auth_service", "latency_ms": 42, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.288000", "service": "database_service", "latency_ms": 120, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.337000", "service": "database_service", "latency_ms": 123, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.349000", "service": "database_service", "latency_ms": 148, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.373000", "service": "database_service", "latency_ms": 98, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.406000", "service": "database_service", "latency_ms": 97, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.433000", "service": "database_service", "latency_ms": 127, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.458000", "service": "database_service", "latency_ms": 109, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.508000", "service": "database_service", "latency_ms": 78, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.521000", "service": "database_service", "latency_ms": 54, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.548000", "service": "database_service", "latency_ms": 77, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.578000", "service": "api_service", "latency_ms": 143, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.617000", "service": "api_service", "latency_ms": 97, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.662000", "service": "api_service", "latency_ms": 175, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.709000", "service": "api_service", "latency_ms": 108, "status_code": 401, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.751000", "service": "api_service", "latency_ms": 176, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.768000", "service": "api_service", "latency_ms": 100, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.805000", "service": "api_service", "latency_ms": 129, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.844000", "service": "api_service", "latency_ms": 150, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.854000", "service": "api_service", "latency_ms": 193, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.881000", "service": "api_service", "latency_ms": 117, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "NORMAL"}
+{"timestamp": "2026-04-25T10:00:00.920000", "service": "auth_service", "latency_ms": 40, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:00.962000", "service": "auth_service", "latency_ms": 51, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.012000", "service": "auth_service", "latency_ms": 59, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.031000", "service": "auth_service", "latency_ms": 63, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.074000", "service": "auth_service", "latency_ms": 40, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.091000", "service": "auth_service", "latency_ms": 63, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.137000", "service": "auth_service", "latency_ms": 45, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.151000", "service": "auth_service", "latency_ms": 74, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.191000", "service": "auth_service", "latency_ms": 75, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.239000", "service": "auth_service", "latency_ms": 67, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.261000", "service": "database_service", "latency_ms": 601, "status_code": 200, "severity": "WARNING", "message": "High database latency", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.299000", "service": "database_service", "latency_ms": 607, "status_code": 200, "severity": "WARNING", "message": "High database latency", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.313000", "service": "database_service", "latency_ms": 552, "status_code": 200, "severity": "WARNING", "message": "High database latency", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.360000", "service": "database_service", "latency_ms": 550, "status_code": 200, "severity": "WARNING", "message": "High database latency", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.373000", "service": "database_service", "latency_ms": 558, "status_code": 200, "severity": "WARNING", "message": "High database latency", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.404000", "service": "database_service", "latency_ms": 615, "status_code": 200, "severity": "WARNING", "message": "High database latency", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.445000", "service": "database_service", "latency_ms": 619, "status_code": 200, "severity": "WARNING", "message": "High database latency", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.491000", "service": "database_service", "latency_ms": 610, "status_code": 200, "severity": "WARNING", "message": "High database latency", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.527000", "service": "database_service", "latency_ms": 562, "status_code": 200, "severity": "WARNING", "message": "High database latency", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.559000", "service": "database_service", "latency_ms": 602, "status_code": 200, "severity": "WARNING", "message": "High database latency", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.572000", "service": "api_service", "latency_ms": 131, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.588000", "service": "api_service", "latency_ms": 104, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.606000", "service": "api_service", "latency_ms": 115, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.620000", "service": "api_service", "latency_ms": 92, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.664000", "service": "api_service", "latency_ms": 198, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.689000", "service": "api_service", "latency_ms": 142, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.724000", "service": "api_service", "latency_ms": 128, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.758000", "service": "api_service", "latency_ms": 180, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.795000", "service": "api_service", "latency_ms": 171, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.817000", "service": "api_service", "latency_ms": 87, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "DB_LATENCY"}
+{"timestamp": "2026-04-25T10:00:01.861000", "service": "auth_service", "latency_ms": 43, "status_code": 200, "severity": "INFO", "message": "Auth success", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:01.903000", "service": "auth_service", "latency_ms": 73, "status_code": 401, "severity": "ERROR", "message": "Authentication failed", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:01.924000", "service": "auth_service", "latency_ms": 44, "status_code": 401, "severity": "ERROR", "message": "Authentication failed", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:01.941000", "service": "auth_service", "latency_ms": 76, "status_code": 200, "severity": "INFO", "message": "Auth success", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:01.977000", "service": "auth_service", "latency_ms": 77, "status_code": 401, "severity": "ERROR", "message": "Authentication failed", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.007000", "service": "auth_service", "latency_ms": 55, "status_code": 200, "severity": "INFO", "message": "Auth success", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.046000", "service": "auth_service", "latency_ms": 60, "status_code": 401, "severity": "ERROR", "message": "Authentication failed", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.092000", "service": "auth_service", "latency_ms": 46, "status_code": 401, "severity": "ERROR", "message": "Authentication failed", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.124000", "service": "auth_service", "latency_ms": 44, "status_code": 401, "severity": "ERROR", "message": "Authentication failed", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.168000", "service": "auth_service", "latency_ms": 59, "status_code": 401, "severity": "ERROR", "message": "Authentication failed", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.213000", "service": "database_service", "latency_ms": 134, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.231000", "service": "database_service", "latency_ms": 64, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.276000", "service": "database_service", "latency_ms": 84, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.307000", "service": "database_service", "latency_ms": 137, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.349000", "service": "database_service", "latency_ms": 82, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.362000", "service": "database_service", "latency_ms": 131, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.374000", "service": "database_service", "latency_ms": 92, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.400000", "service": "database_service", "latency_ms": 144, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.437000", "service": "database_service", "latency_ms": 51, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.456000", "service": "database_service", "latency_ms": 54, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.501000", "service": "api_service", "latency_ms": 96, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.534000", "service": "api_service", "latency_ms": 106, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.550000", "service": "api_service", "latency_ms": 151, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.586000", "service": "api_service", "latency_ms": 99, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.611000", "service": "api_service", "latency_ms": 192, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.632000", "service": "api_service", "latency_ms": 199, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.657000", "service": "api_service", "latency_ms": 180, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.691000", "service": "api_service", "latency_ms": 108, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.730000", "service": "api_service", "latency_ms": 185, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.754000", "service": "api_service", "latency_ms": 164, "status_code": 200, "severity": "INFO", "message": "Normal operation", "scenario": "AUTH_FAILURE"}
+{"timestamp": "2026-04-25T10:00:02.785000", "service": "auth_service", "latency_ms": 1057, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:02.820000", "service": "auth_service", "latency_ms": 1074, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:02.846000", "service": "auth_service", "latency_ms": 1051, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:02.878000", "service": "auth_service", "latency_ms": 1060, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:02.924000", "service": "auth_service", "latency_ms": 1052, "status_code": 429, "severity": "WARNING", "message": "Rate limited - too many requests", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:02.968000", "service": "auth_service", "latency_ms": 1052, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:02.999000", "service": "auth_service", "latency_ms": 1079, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.028000", "service": "auth_service", "latency_ms": 1072, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.056000", "service": "auth_service", "latency_ms": 1075, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.077000", "service": "auth_service", "latency_ms": 1079, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.106000", "service": "database_service", "latency_ms": 1076, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.136000", "service": "database_service", "latency_ms": 1106, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.156000", "service": "database_service", "latency_ms": 1086, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.171000", "service": "database_service", "latency_ms": 1136, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.182000", "service": "database_service", "latency_ms": 1081, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.221000", "service": "database_service", "latency_ms": 1130, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.262000", "service": "database_service", "latency_ms": 1081, "status_code": 429, "severity": "WARNING", "message": "Rate limited - too many requests", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.278000", "service": "database_service", "latency_ms": 1078, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.317000", "service": "database_service", "latency_ms": 1121, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.335000", "service": "database_service", "latency_ms": 1135, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.373000", "service": "api_service", "latency_ms": 1194, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.418000", "service": "api_service", "latency_ms": 1175, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.443000", "service": "api_service", "latency_ms": 1178, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.468000", "service": "api_service", "latency_ms": 1089, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.499000", "service": "api_service", "latency_ms": 1090, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.518000", "service": "api_service", "latency_ms": 1133, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.554000", "service": "api_service", "latency_ms": 1186, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.601000", "service": "api_service", "latency_ms": 1153, "status_code": 429, "severity": "WARNING", "message": "Rate limited - too many requests", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.633000", "service": "api_service", "latency_ms": 1129, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.669000", "service": "api_service", "latency_ms": 1174, "status_code": 200, "severity": "WARNING", "message": "High traffic", "scenario": "TRAFFIC_SPIKE"}
+{"timestamp": "2026-04-25T10:00:03.693000", "service": "auth_service", "latency_ms": 871, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:03.704000", "service": "auth_service", "latency_ms": 864, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:03.739000", "service": "auth_service", "latency_ms": 850, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:03.788000", "service": "auth_service", "latency_ms": 874, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:03.834000", "service": "auth_service", "latency_ms": 841, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:03.873000", "service": "auth_service", "latency_ms": 851, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:03.896000", "service": "auth_service", "latency_ms": 869, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:03.930000", "service": "auth_service", "latency_ms": 857, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:03.945000", "service": "auth_service", "latency_ms": 870, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:03.977000", "service": "auth_service", "latency_ms": 854, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:03.989000", "service": "database_service", "latency_ms": 881, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.038000", "service": "database_service", "latency_ms": 880, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.055000", "service": "database_service", "latency_ms": 877, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.088000", "service": "database_service", "latency_ms": 927, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.105000", "service": "database_service", "latency_ms": 889, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.134000", "service": "database_service", "latency_ms": 936, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.169000", "service": "database_service", "latency_ms": 859, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.219000", "service": "database_service", "latency_ms": 863, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.267000", "service": "database_service", "latency_ms": 922, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.311000", "service": "database_service", "latency_ms": 934, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.342000", "service": "api_service", "latency_ms": 985, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.379000", "service": "api_service", "latency_ms": 994, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.398000", "service": "api_service", "latency_ms": 973, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.425000", "service": "api_service", "latency_ms": 979, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.462000", "service": "api_service", "latency_ms": 921, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.477000", "service": "api_service", "latency_ms": 911, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.523000", "service": "api_service", "latency_ms": 928, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.564000", "service": "api_service", "latency_ms": 942, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.590000", "service": "api_service", "latency_ms": 992, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
+{"timestamp": "2026-04-25T10:00:04.617000", "service": "api_service", "latency_ms": 946, "status_code": 200, "severity": "WARNING", "message": "System degradation detected", "scenario": "DEGRADATION"}
