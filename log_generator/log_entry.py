@@ -2,7 +2,7 @@
 
 from dataclasses import dataclass, asdict
 from datetime import datetime
-from constants import Service, Severity, Scenario
+from log_generator.constants import Service, Severity, Scenario
 import json
 
 

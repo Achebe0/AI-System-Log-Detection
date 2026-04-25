@@ -178,4 +178,4 @@ MIT License
 
 ## Author
 
-Built for Cohere AI SWE application | April 2026 
+

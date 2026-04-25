@@ -1,5 +1,3 @@
-"""Constants for log simulator"""
-
 from enum import Enum
 
 

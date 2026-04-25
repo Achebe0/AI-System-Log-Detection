@@ -2,8 +2,8 @@
 
 import random
 from datetime import datetime, timedelta
-from constants import Service, Scenario, Intensity, Severity
-from log_entry import LogEntry
+from log_generator.constants import Service, Scenario, Intensity, Severity
+from log_generator.log_entry import LogEntry
 
 
 class LogSimulator:
