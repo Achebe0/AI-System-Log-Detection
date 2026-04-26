@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Install additional dev dependencies
+      run: |
+        pip install flake8 black pytest
+
+    - name: Lint with flake8
+      run: |
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+    - name: Format check with black
+      run: black --check --diff .
+
+    - name: Run tests
+      run: pytest test_simulator.py -v
+
+    - name: Run log simulator
+      run: python main.py
+      env:
+        COHERE_API_KEY: dummy_key_for_ci
+
+    - name: Check generated logs
+      run: |
+        if [ ! -f logs.jsonl ]; then
+          echo "logs.jsonl not generated"
+          exit 1
+        fi
+        echo "Generated $(wc -l < logs.jsonl) log entries"
