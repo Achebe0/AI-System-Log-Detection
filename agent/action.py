@@ -27,23 +27,56 @@ class Executor:
         return action
     
     def _escalate_incident(self, analysis: KowalskiAnalysis) -> Action:
-        " Critical lvl would escalate to engineers on call"
+        """Critical level - escalate to on-call engineer"""
         log = analysis.log_event
         msg = f"🚨 CRITICAL: {analysis.reasoning}"
         
         print(f"\n{msg}")
         print(f"   Service: {log.service}")
         print(f"   Confidence: {analysis.confidence:.0%}")
+        
+        # Try to generate AI summary for critical incidents
+        summary = self._generate_incident_summary(log)
+        if summary:
+            print(f"   📋 Summary: {summary}")
+        
         print(f"   → Alerting on-call engineer...")
         
         self.escalations += 1
         
+        # Include summary in description if available
+        full_desc = msg + (f"\n{summary}" if summary else "")
+        
         return Action(
             action_type="ESCALATE",
             target=log.service,
-            desc=msg,
+            desc=full_desc,
             severity="CRITICAL"
         )
+    
+    def _generate_incident_summary(self, log) -> str:
+        """Optional: Generate AI summary for critical incident"""
+        try:
+            from Cohere_Client.client import IncidentSummarizer
+            summarizer = IncidentSummarizer()
+            
+            # Create log dict for Cohere
+            log_dict = {
+                "timestamp": log.timestamp,
+                "service": log.service,
+                "latency_ms": log.latency_ms,
+                "status_code": log.status_code,
+                "severity": log.severity,
+                "message": log.msg,
+                "scenario": log.scenario
+            }
+            
+            summary = summarizer.summarize_logs([log_dict])
+            return summary
+        except Exception as e:
+            # Gracefully fail - Cohere not configured or API error
+            # Agent still works without it
+            return None
     
     def _send_alert(self, analysis: KowalskiAnalysis) -> Action:
         
