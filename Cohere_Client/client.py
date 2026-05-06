@@ -1,19 +1,19 @@
 import cohere
 from config.settings import COHERE_API_KEY, COHERE_MODEL
 
-class IncidentSummarizer:
-    def __init__(self):
+
+class SummarizeIncident:
+    def __init__ (self):
         if not COHERE_API_KEY or COHERE_API_KEY == "your_cohere_api_key_here":
             raise ValueError("Invalid Cohere API Key. Please update your .env file.")
         
         self.client = cohere.Client(COHERE_API_KEY)
-        
+
+      # takes a list of log incidents and uses the Cohere Command R model to summarize them  
     def summarize_logs(self, anomaly_logs):
-        """
-        Takes a list of anomalous log dictionaries and uses Cohere's Chat API to generate an incident report.
-        """
+      
         if not anomaly_logs:
-            return "No anomalies detected."
+            return "No anomalies detected, clean system!"
             
         logs_str = "\n".join([str(log) for log in anomaly_logs[:50]]) # Limit to 50 to save tokens
         
@@ -40,9 +40,9 @@ if __name__ == "__main__":
     ]
     
     try:
-        summarizer = IncidentSummarizer()
+        summarizer = SummarizeIncident()
         report = summarizer.summarize_logs(sample_logs)
-        print("--- Generated Incident Report ---")
+        print(" Generated Incident Report:")
         print(report)
     except Exception as e:
         print(f"Error: {e}")
