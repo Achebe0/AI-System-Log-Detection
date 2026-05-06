@@ -8,46 +8,43 @@ def main():
     """Demonstrate log generation with different scenarios"""
     
     print("\n" + "="*120)
-    print("AI System Log Detection - MVP Log Simulator")
+    print("AI System Log Detection - Enhanced Training Data Generator")
     print("="*120 + "\n")
     
     # Create simulator
     sim = LogSimulator(seed=42)
     
-    # Scenario 1: Normal Operation 
-    print("📊 Generating 30 NORMAL logs...")
-    sim.generate_logs(30, Scenario.NORMAL, Intensity.LOW)
-    sim.print_logs(5)
+    # Generate much more data for better training
+    print("📊 Generating extensive training data...")
     
-    #  Scenario 2: Database Latency (MEDIUM) 
-    print("\n\n📊 Generating 30 logs with DB_LATENCY (MEDIUM intensity)...")
-    sim.generate_logs(30, Scenario.DB_LATENCY, Intensity.MEDIUM)
-    sim.print_logs(5)
+    # Normal operation - 4000 logs
+    sim.generate_logs(4000, Scenario.NORMAL, Intensity.LOW)
     
-    #  Scenario 3: Auth Failures (HIGH) 
-    print("\n\n📊 Generating 30 logs with AUTH_FAILURE (HIGH intensity)...")
-    sim.generate_logs(30, Scenario.AUTH_FAILURE, Intensity.HIGH)
-    sim.print_logs(5)
+    # Database latency scenarios - 3000 logs total
+    sim.generate_logs(1000, Scenario.DB_LATENCY, Intensity.LOW)
+    sim.generate_logs(1000, Scenario.DB_LATENCY, Intensity.MEDIUM) 
+    sim.generate_logs(1000, Scenario.DB_LATENCY, Intensity.HIGH)
     
-    #  Scenario 4: Traffic Spike (HIGH) 
-    print("\n\n📊 Generating 30 logs with TRAFFIC_SPIKE (HIGH intensity)...")
-    sim.generate_logs(30, Scenario.TRAFFIC_SPIKE, Intensity.HIGH)
-    sim.print_logs(5)
+    # Auth failure scenarios - 3000 logs total
+    sim.generate_logs(1000, Scenario.AUTH_FAILURE, Intensity.LOW)
+    sim.generate_logs(1000, Scenario.AUTH_FAILURE, Intensity.MEDIUM)
+    sim.generate_logs(1000, Scenario.AUTH_FAILURE, Intensity.HIGH)
     
-    #  Scenario 5: System Degradation (HIGH) 
-    print("\n\n📊 Generating 30 logs with DEGRADATION (HIGH intensity)...")
-    sim.generate_logs(30, Scenario.DEGRADATION, Intensity.HIGH)
-    sim.print_logs(5)
+    # Traffic spike scenarios - 3000 logs total
+    sim.generate_logs(1000, Scenario.TRAFFIC_SPIKE, Intensity.LOW)
+    sim.generate_logs(1000, Scenario.TRAFFIC_SPIKE, Intensity.MEDIUM)
+    sim.generate_logs(1000, Scenario.TRAFFIC_SPIKE, Intensity.HIGH)
+    
+    # System degradation scenarios - 3000 logs total
+    sim.generate_logs(1000, Scenario.DEGRADATION, Intensity.LOW)
+    sim.generate_logs(1000, Scenario.DEGRADATION, Intensity.MEDIUM)
+    sim.generate_logs(1000, Scenario.DEGRADATION, Intensity.HIGH)
     
     # Export all logs
     sim.export_jsonl("logs.jsonl")
     
     print(f"\n✅ Total logs generated: {len(sim.logs)}")
     print(f"📁 Output saved to logs.jsonl\n")
-    
-    print("\n" + "="*120)
-    print("🤖 AI Incident Reporter (Cohere)")
-    print("="*120 + "\n")
     
     try:
         from Cohere_Client.client import IncidentSummarizer

@@ -12,13 +12,6 @@ class Anamoly_Lvl(Enum):
 
 @dataclass
 class LogEvent:
-    timestamp: str
-    service: str
-    severity: Anamoly_Lvl
-    message: str
-
-@dataclass
-class LogEvent:
     timestamp : str
     service: str
     latency_ms : int

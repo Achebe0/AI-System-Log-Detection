@@ -39,50 +39,53 @@ class LogSimulator:
             return (0, None, Severity.INFO, "Normal operation")
         
         elif scenario == Scenario.DB_LATENCY:
-            if service == Service.DATABASE:
-                latency_mod = {
-                    Intensity.LOW: 200,
-                    Intensity.MEDIUM: 500,
-                    Intensity.HIGH: 2000
-                }[intensity]
-                return (latency_mod, None, Severity.WARNING, "High database latency")
-            return (0, None, Severity.INFO, "Normal operation")
+            # Apply to ALL services for more distinct patterns
+            latency_mod = {
+                Intensity.LOW: 300,
+                Intensity.MEDIUM: 800,
+                Intensity.HIGH: 2500
+            }[intensity]
+            return (latency_mod, None, Severity.WARNING, "High latency detected")
         
         elif scenario == Scenario.AUTH_FAILURE:
-            if service == Service.AUTH:
-                failure_rate = {
-                    Intensity.LOW: 0.05,
-                    Intensity.MEDIUM: 0.20,
-                    Intensity.HIGH: 0.50
-                }[intensity]
-                
-                if random.random() < failure_rate:
-                    return (0, 401, Severity.ERROR, "Authentication failed")
-                return (0, None, Severity.INFO, "Auth success")
-            return (0, None, Severity.INFO, "Normal operation")
+            # Apply to ALL services - high error rates
+            error_rate = {
+                Intensity.LOW: 0.15,
+                Intensity.MEDIUM: 0.40,
+                Intensity.HIGH: 0.75
+            }[intensity]
+            
+            if random.random() < error_rate:
+                return (50, random.choice([401, 403, 500]), Severity.ERROR, "Access denied")
+            return (0, None, Severity.INFO, "Request successful")
         
         elif scenario == Scenario.TRAFFIC_SPIKE:
+            # Apply to ALL services - very high latency
             latency_mod = {
-                Intensity.LOW: 50,
-                Intensity.MEDIUM: 200,
-                Intensity.HIGH: 1000
+                Intensity.LOW: 200,
+                Intensity.MEDIUM: 600,
+                Intensity.HIGH: 1500
             }[intensity]
             
             # High intensity may cause 429 errors
-            if intensity == Intensity.HIGH and random.random() < 0.10:
-                return (latency_mod, 429, Severity.WARNING, "Rate limited - too many requests")
+            if intensity == Intensity.HIGH and random.random() < 0.25:
+                return (latency_mod, 429, Severity.ERROR, "Too many requests")
             
-            return (latency_mod, None, Severity.WARNING, "High traffic")
+            return (latency_mod, None, Severity.WARNING, "High load")
         
         elif scenario == Scenario.DEGRADATION:
-            # Gradual performance decline
+            # Apply to ALL services - moderate latency increase with occasional errors
             degradation = {
-                Intensity.LOW: 100,
-                Intensity.MEDIUM: 300,
-                Intensity.HIGH: 800
+                Intensity.LOW: 150,
+                Intensity.MEDIUM: 400,
+                Intensity.HIGH: 1000
             }[intensity]
             
-            return (degradation, None, Severity.WARNING, "System degradation detected")
+            # Occasional errors during degradation
+            if random.random() < 0.10 * intensity.value:
+                return (degradation, random.choice([500, 502, 503]), Severity.ERROR, "Service unavailable")
+            
+            return (degradation, None, Severity.WARNING, "Performance degradation")
         
         return (0, None, Severity.INFO, "Unknown scenario")
     
