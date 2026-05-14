@@ -3,8 +3,8 @@
 
 from .models import LogEvent, KowalskiAnalysis, Action, Anamoly_Lvl
 from .monitor import Monitor
-from .reasoner import Reasoner
-from .executor import Executor
+from .reasoning import Reasoner
+from .action import Executor
 from .agent import LogAgent
 
 __all__ = [

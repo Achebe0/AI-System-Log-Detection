@@ -1,0 +1,31 @@
+# Production Kubernetes Namespace
+
+Create a dedicated namespace for the application:
+
+```bash
+kubectl create namespace log-detection
+```
+
+Then apply manifests with namespace:
+
+```bash
+kubectl apply -f kubernetes/ -n log-detection
+```
+
+Or update the manifests to include namespace:
+
+```yaml
+metadata:
+  namespace: log-detection
+```
+
+This file can be applied directly for namespace creation:
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: log-detection
+  labels:
+    name: log-detection
+    environment: production

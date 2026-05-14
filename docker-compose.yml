@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+  log-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai-log-detector
+    environment:
+      COHERE_API_KEY: ${COHERE_API_KEY:-your_cohere_api_key_here}
+      COHERE_MODEL: ${COHERE_MODEL:-command}
+      LOG_FILE_PATH: ${LOG_FILE_PATH:-/app/logs.jsonl}
+      LOG_API_URL: ${LOG_API_URL:-http://localhost:8001}
+      POLL_INTERVAL: ${POLL_INTERVAL:-0.5}
+      DURATION: ${DURATION:-10}
+    volumes:
+      # Mount local logs for development
+      - ./logs.jsonl:/app/logs.jsonl:ro
+      - ./agent:/app/agent:ro
+      - ./config:/app/config:ro
+    ports:
+      - "8000:8000"  # Agent API
+    networks:
+      - log-network
+    restart: unless-stopped
+    depends_on:
+      - log-api
+
+  # Optional: Log API service for remote log ingestion
+  log-api:
+    image: python:3.11-slim
+    container_name: log-api-server
+    working_dir: /app
+    command: >
+      bash -c "pip install -q fastapi uvicorn python-dotenv &&
+               python -c \"
+from fastapi import FastAPI
+from fastapi.responses import JSONResponse
+import json
+
+app = FastAPI()
+
+@app.get('/health')
+def health():
+    return JSONResponse({'status': 'ok'})
+
+@app.get('/logs')
+def get_logs():
+    try:
+        with open('/app/logs.jsonl', 'r') as f:
+            logs = [json.loads(line) for line in f]
+        return JSONResponse({'logs': logs})
+    except:
+        return JSONResponse({'logs': [], 'error': 'No logs found'})
+
+if __name__ == '__main__':
+    import uvicorn
+    uvicorn.run(app, host='0.0.0.0', port=8001)
+              \""
+    volumes:
+      - ./logs.jsonl:/app/logs.jsonl:ro
+    ports:
+      - "8001:8001"
+    networks:
+      - log-network
+    environment:
+      PYTHONUNBUFFERED: 1
+
+networks:
+  log-network:
+    driver: bridge

@@ -101,7 +101,7 @@ class Executor:
         
         "No need to stress the engineers for now"
         log = analysis.log_event
-        msg = f"✓ NORMAL: {analysis.reasoning}"
+        msg = f" NORMAL: {analysis.reasoning}"
         
         return Action(
             action_type="LOG",

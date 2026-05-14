@@ -1,0 +1,121 @@
+version: '3.8'
+
+# Extended docker-compose for production-like environment
+# Use with: docker-compose -f docker-compose.prod.yml up
+
+services:
+  log-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PYTHON_VERSION: "3.11"
+    container_name: ai-log-detector-prod
+    image: log-agent:prod
+    environment:
+      COHERE_API_KEY: ${COHERE_API_KEY}
+      COHERE_MODEL: ${COHERE_MODEL:-command}
+      LOG_FILE_PATH: /app/logs.jsonl
+      LOG_API_URL: http://log-api:8001
+      POLL_INTERVAL: "0.5"
+      DURATION: "3600"  # 1 hour
+      PYTHONUNBUFFERED: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+    volumes:
+      - ./logs.jsonl:/app/logs.jsonl:ro
+      - logs_cache:/app/.cache
+    ports:
+      - "8000:8000"
+    networks:
+      - log-network
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    depends_on:
+      log-api:
+        condition: service_healthy
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+
+  log-api:
+    image: python:3.11-slim
+    container_name: log-api-prod
+    working_dir: /app
+    command: >
+      bash -c "
+        pip install -q fastapi uvicorn &&
+        python -m uvicorn api:app --host 0.0.0.0 --port 8001
+      "
+    volumes:
+      - ./logs.jsonl:/app/logs.jsonl:ro
+      - ./api.py:/app/api.py
+    ports:
+      - "8001:8001"
+    networks:
+      - log-network
+    environment:
+      PYTHONUNBUFFERED: 1
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 256M
+        reservations:
+          cpus: '0.125'
+          memory: 128M
+
+  # Optional: Prometheus for metrics
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    networks:
+      - log-network
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+    restart: unless-stopped
+
+volumes:
+  logs_cache:
+    driver: local
+  prometheus_data:
+    driver: local
+
+networks:
+  log-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/16
