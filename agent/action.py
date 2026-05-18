@@ -10,10 +10,7 @@ class Executor:
         self.escalations = 0
     
     def execute_action(self, analysis: KowalskiAnalysis) -> Action:
-        """
-        Given an analysis, take appropriate action
-        Returns: Action object describing what was done
-        """
+        "Given the analysis, decide on the appropriate action to take"
         
         # Decision logic
         if analysis.anamoly_level == Anamoly_Lvl.CRITICAL:
@@ -29,7 +26,7 @@ class Executor:
     def _escalate_incident(self, analysis: KowalskiAnalysis) -> Action:
         """Critical level - escalate to on-call engineer"""
         log = analysis.log_event
-        msg = f"🚨 CRITICAL: {analysis.reasoning}"
+        msg = f" CRITICAL: {analysis.reasoning}"
         
         print(f"\n{msg}")
         print(f"   Service: {log.service}")
@@ -38,7 +35,7 @@ class Executor:
         # Try to generate AI summary for critical incidents
         summary = self._generate_incident_summary(log)
         if summary:
-            print(f"   📋 Summary: {summary}")
+            print(f"    Summary: {summary}")
         
         print(f"   → Alerting on-call engineer...")
         
@@ -82,7 +79,7 @@ class Executor:
         
         "Medium lvl, this sends an alert to the dashboard just to keep the engineers wary"
         log = analysis.log_event
-        msg = f"⚠️  ALERT: {analysis.reasoning}"
+        msg = f"  ALERT: {analysis.reasoning}"
         
         print(f"\n{msg}")
         print(f"   Service: {log.service}")

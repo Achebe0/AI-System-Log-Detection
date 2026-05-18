@@ -1,5 +1,5 @@
 
-"""Agentic Log Detection System"""
+"Agentic Log Detection System"
 
 from .models import LogEvent, KowalskiAnalysis, Action, Anamoly_Lvl
 from .monitor import Monitor

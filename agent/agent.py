@@ -60,7 +60,7 @@ class LogAgent:
     def _print_summary(self):
         """Print final report"""
         print("\n" + "="*70)
-        print("📊 AGENT SUMMARY")
+        print(" AGENT SUMMARY")
         print("="*70)
         print(f"Logs perceived: {self.monitor.logs_seen}")
         print(f"Decisions made: {self.reasoner.decisions_made}")
@@ -71,7 +71,7 @@ class LogAgent:
             avg_latency = sum(self.latencies) / len(self.latencies)
             min_latency = min(self.latencies)
             max_latency = max(self.latencies)
-            print(f"\n⏱️  Performance Metrics:")
+            print(f"\n  Performance Metrics:")
             print(f"  - Min latency: {min_latency:.2f}ms")
             print(f"  - Max latency: {max_latency:.2f}ms")
             print(f"  - Avg latency: {avg_latency:.2f}ms")
